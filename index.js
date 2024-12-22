@@ -49,7 +49,7 @@ app.post('/notes', async (req, res) => {
 })
 
 const startServer = async () => {
-    await mongoose.connect("mongodb://localhost:27017/notes");
+    await mongoose.connect("mongodb+srv://nashtefison:yFRkzhl3fOL9OCyC@cluster0.h7yx1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
     console.log("Connected to MongoDB server");
 
     app.listen(3000, '0.0.0.0', () => console.log("Server is running on port 3000"));
